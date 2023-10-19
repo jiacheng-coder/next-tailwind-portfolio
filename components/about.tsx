@@ -1,10 +1,8 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { useActiveSectionContext } from '@/context/active-section-context'
 import { useSectionInView } from '@/lib/hooks'
 
 export default function About() {
