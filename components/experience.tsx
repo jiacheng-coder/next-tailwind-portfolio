@@ -39,6 +39,7 @@ export default function Experience() {
               once: false,
             }}
             custom={index}
+            key={item.title}
           >
             <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
               <text className='mr-2 w-4'>{item.icon}</text>
