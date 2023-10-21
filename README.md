@@ -12,6 +12,10 @@
 - react-intersection-observer: watch if the section in view
 - react-vertical-timeline-component
 - resend@0.16.0: help to send email
+- styling the email content
+  - @react-email/components
+  - @react-email/tailwind
+- react-hot-toast: give the toast
 
 # server action
 
