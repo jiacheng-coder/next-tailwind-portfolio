@@ -41,10 +41,10 @@ export default function Experience() {
             custom={index}
             key={item.title}
           >
-            <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
+            <h3 className='flex items-center text-lg font-semibold text-gray-900 dark:text-white'>
               <text className='mr-2 w-4'>{item.icon}</text>
               <text>{item.title}</text>
-              {index === 0 ? (
+              {index === experiencesData.length - 1 ? (
                 <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3'>Latest</span>
               ) : (
                 <span className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3'>{item.date}</span>
@@ -52,9 +52,15 @@ export default function Experience() {
             </h3>
             <div className='flex items-center gap-2 justify-between'>
               <text>{item.location}</text>
-              {/* <time className='leading-none text-gray-400 dark:text-gray-500'>{item.date}</time> */}
             </div>
-            <p className='text-base font-normal text-gray-500 dark:text-gray-400'>{item.description}</p>
+            <p className='mb-1 text-base font-normal text-gray-500 dark:text-gray-400'>{item.description}</p>
+            <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
+              {item.skills.map((tag, index) => (
+                <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70' key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </motion.li>
         ))}
       </ol>

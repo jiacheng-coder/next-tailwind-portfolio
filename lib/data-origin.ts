@@ -6,15 +6,6 @@ import corpcommentImg from '@/public/corpcomment.png'
 import rmtdevImg from '@/public/rmtdev.png'
 import wordanalyticsImg from '@/public/wordanalytics.png'
 
-export const intro = "Welcome to my portfolio. I'm JiaCheng Zhu, a front-end developer in China. I enjoy building sites & apps!"
-
-export const personalInfo = {
-  contactMe: 'Contact Me',
-  downloadResume: 'Download Resume',
-  githubUrl: 'https://github.com/jiacheng-coder',
-  email: 'jiachengcoder@gmail.com',
-}
-
 export const links = [
   {
     name: 'Home',
@@ -44,28 +35,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: '第四届字节跳动青训营',
-    location: 'Online Campus',
-    description: '面向高校学生的前端开发青训营，系统学习开发知识、Git协作知识等',
+    title: 'Graduated bootcamp',
+    location: 'Miami, FL',
+    description: 'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
     icon: React.createElement(LuGraduationCap),
-    date: '2022.7 - 2022.9',
-    skills: ['Vue2', 'Element', 'Webpack'],
+    date: '2019',
   },
   {
     title: 'Front-End Developer',
-    location: 'ChongQing, China',
-    description: '负责WeCQU小程序的开发与重构，期间促成了6000+的用户增长',
+    location: 'Orlando, FL',
+    description: 'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
     icon: React.createElement(CgWorkAlt),
-    date: '2022.10 - 2023.7',
-    skills: ['Vue2', 'Element', 'Webpack'],
+    date: '2019 - 2021',
   },
   {
-    title: 'Front-End Developer',
-    location: 'ChengDu, China',
-    description: '提报活动全链路配置的 M 端系统, 基于 React 全家桶、Vite 打包工具落地业务开发',
+    title: 'Full-Stack Developer',
+    location: 'Houston, TX',
+    description: "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: '2021 - present',
-    skills: ['Vue2', 'Element', 'Webpack'],
   },
 ] as const
 
@@ -98,19 +86,19 @@ export const skillsData = [
   'Vue',
   'React',
   'Next.js',
-  'WeChat MiniProgram',
-  'Uniapp H5',
+  'MiniProgram',
+  'Uniapp',
   'Node.js',
+  'Git',
   'Tailwind',
-  'Framer Motion',
-  'Ant Design',
-  'Roo UI',
-  // 'MongoDB',
+  // 'Prisma',
+  'MongoDB',
   // 'Redux',
   // 'GraphQL',
   // 'Apollo',
-  // 'Express',
+  'Express',
   // 'PostgreSQL',
-  // 'Python',
+  'Python',
   // 'Django',
+  'Framer Motion',
 ] as const

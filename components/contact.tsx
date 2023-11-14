@@ -7,6 +7,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { sendEmail } from '@/actions/sendEmail'
 import SubmitBtn from './submit-btn'
 import toast from 'react-hot-toast'
+import { personalInfo } from '@/lib/data'
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact')
@@ -33,8 +34,8 @@ export default function Contact() {
 
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Please contact me directly at{' '}
-        <a className='underline' href='mailto:example@gmail.com'>
-          example@gmail.com
+        <a className='underline' href={`mailto:${personalInfo.email}`}>
+          {personalInfo.email}
         </a>{' '}
         or through this form.
       </p>
