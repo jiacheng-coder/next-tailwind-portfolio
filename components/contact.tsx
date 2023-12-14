@@ -10,7 +10,7 @@ import toast from 'react-hot-toast'
 import { personalInfo } from '@/lib/data'
 
 export default function Contact() {
-  const { ref } = useSectionInView('Contact')
+  const { ref } = useSectionInView('联系我')
 
   return (
     <motion.section
@@ -30,14 +30,15 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      {/* <SectionHeading>Contact me</SectionHeading> */}
+      <SectionHeading>联系我</SectionHeading>
 
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
-        Please contact me directly at{' '}
+        您可以直接发送邮件到{' '}
         <a className='underline' href={`mailto:${personalInfo.email}`}>
           {personalInfo.email}
-        </a>{' '}
-        or through this form.
+        </a>
+        ，或者通过下面的表单直接发送。{' '}
       </p>
 
       <form
@@ -59,12 +60,12 @@ export default function Contact() {
           type='email'
           required
           maxLength={500}
-          placeholder='Your email'
+          placeholder='您的邮箱'
         />
         <textarea
           className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           name='message'
-          placeholder='Your message'
+          placeholder='内容'
           required
           maxLength={5000}
         />

@@ -23,7 +23,7 @@ const fadeInAnimationVariants = {
 }
 
 export default function Experience() {
-  const { ref } = useSectionInView('Experience')
+  const { ref } = useSectionInView('个人经历')
 
   return (
     <section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
@@ -51,7 +51,7 @@ export default function Experience() {
               )}
             </h3>
             <div className='flex items-center gap-2 justify-between'>
-              <text>{item.location}</text>
+              <text>{item?.location}</text>
             </div>
             <p className='mb-1 text-base font-normal text-gray-500 dark:text-gray-400'>{item.description}</p>
             <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>

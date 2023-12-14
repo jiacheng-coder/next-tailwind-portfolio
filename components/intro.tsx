@@ -13,7 +13,7 @@ import { useActiveSectionContext } from '@/context/active-section-context'
 import { personalInfo, intro } from '@/lib/data'
 
 const Intro = () => {
-  const { ref } = useSectionInView('Home', 0.5)
+  const { ref } = useSectionInView('首页', 0.5)
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
@@ -56,7 +56,7 @@ const Intro = () => {
           href='#contact'
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
           onClick={() => {
-            setActiveSection('Contact')
+            setActiveSection('联系我')
             setTimeOfLastClick(Date.now())
           }}
         >

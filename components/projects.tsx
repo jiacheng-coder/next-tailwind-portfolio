@@ -7,18 +7,19 @@ import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
 
 export default function Projects() {
-  const { ref } = useSectionInView('Projects')
+  const { ref } = useSectionInView('项目')
 
   return (
     <section id='projects' ref={ref} className='scroll-mt-28 mb-28'>
-      <SectionHeading>My projects</SectionHeading>
-      <div>
+      <SectionHeading>项目</SectionHeading>
+      {/* <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={project.title}>
             <Project {...project} />
           </React.Fragment>
         ))}
-      </div>
+      </div> */}
+      <div className='flex justify-center items-center'>...</div>
     </section>
   )
 }
